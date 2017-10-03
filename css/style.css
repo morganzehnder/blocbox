@@ -1,5 +1,17 @@
 html, body{
   overflow-x: hidden;
+  height:100%;
+}
+header.container{
+  /* The image used */
+   background-image: image(images/"background-hero.jpg");
+   /* Full height */
+height: 100%;
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
 }
 body{
   font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -57,7 +69,14 @@ p{
 .container:after{
   clear:both;
 }
-.one-half, one-third{
+.one-half{
+  width:96%;
+  float:left;
+  position:relative;
+  min-height:1px;
+  margin:0 2% 20px;
+}
+.one-third{
   width:96%;
   float:left;
   position:relative;
@@ -112,4 +131,56 @@ p{
 	20% { opacity: 1; width: 100%; }
     27% { opacity: 0; width: 100%; }
     100% { opacity: 0; }
+}
+@media (min-width: 768px){
+  .container{
+    width: 750px;
+  }
+}
+@media (min-width: 992px){
+  .container{
+    width: 970px;
+  }
+  .one-half{
+    width:46%;
+  }
+  .one-third{
+    width:29.33333%;
+  }
+}
+@media (min-width: 1200px){
+  .container{
+    width: 1170px;
+  }
+}
+/*  HEADER  */
+
+
+header nav{
+  padding:1em 0;
+}
+header nav ul{
+  display: inline;
+  text-align: right;
+  float: right;
+  margin:0;
+}
+header nav ul > li{
+  list-style-type: none;
+  display: inline-block;
+  margin:0 15px;
+}
+header nav ul > li.btn{
+  padding:10px 15px;
+  background:#ED715E;
+}
+header nav ul > li.btn:hover{
+  background:#A8EDD1;
+}
+header nav ul > li > a {
+  color:#F2F8FA;
+  text-decoration: none;
+}
+header nav ul > li.btn:hover{
+  color:#F2F8FA;
 }
