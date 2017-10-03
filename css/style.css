@@ -2,17 +2,6 @@ html, body{
   overflow-x: hidden;
   height:100%;
 }
-header.container{
-  /* The image used */
-   background-image: image(images/"background-hero.jpg");
-   /* Full height */
-height: 100%;
-
-/* Center and scale the image nicely */
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-}
 body{
   font-family: "Lato", Helvetica, Arial, sans-serif;
   color:#282828;
@@ -49,8 +38,8 @@ h6{
   color:#282828;
 }
 p{
-  font-size:20px
-  color:#282828
+  font-size:20px;
+  color:#282828;
   font-weight:100;
 }
 /* GRID */
@@ -83,6 +72,14 @@ p{
   min-height:1px;
   margin:0 2% 20px;
 }
+.features{
+  width:96%;
+  float:left;
+  position:relative;
+  margin:0 2% 100px;
+}
+
+
 /* Animation */
 .rw-wrapper{
 	width: 50%;
@@ -152,7 +149,7 @@ p{
   .container{
     width: 1170px;
   }
-}
+
 /*  HEADER  */
 
 
