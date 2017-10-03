@@ -76,9 +76,20 @@ p{
   width:96%;
   float:left;
   position:relative;
-  margin:0 2% 100px;
+  margin:120px 2% 120px;
 }
-
+.feature-1 section{
+  display:block;
+}
+.feature-2 section{
+  display:block;
+}
+.feature-3 section{
+  display:block;
+}
+.feature-4 section{
+  display:block;
+}
 
 /* Animation */
 .rw-wrapper{
