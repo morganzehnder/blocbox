@@ -140,6 +140,8 @@ p{
     27% { opacity: 0; width: 100%; }
     100% { opacity: 0; }
 }
+
+/* Media Queries */
 @media (min-width: 768px){
   .container{
     width: 750px;
@@ -162,7 +164,6 @@ p{
   }
 
 /*  HEADER  */
-
 
 header nav{
   padding:1em 0;
@@ -192,3 +193,12 @@ header nav ul > li > a {
 header nav ul > li.btn:hover{
   color:#F2F8FA;
 }
+
+/* BUTTONS */
+ .btn {
+   color:#F2F8FA;
+   font-weight: 700;
+   text-decoration: none;
+   padding:10px 30px;
+   background: #ED715E;
+ }
