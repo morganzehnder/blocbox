@@ -5,6 +5,7 @@ html, body{
 body{
   font-family: "Lato", Helvetica, Arial, sans-serif;
   color:#282828;
+  margin: 0;
 }
 h1, h2, h3, h4, h5, h6{
   font-family: "Lato", Helvetica, Arial, sans-serif;
@@ -93,15 +94,13 @@ p{
 
 /* Animation */
 .rw-wrapper{
-	width: 50%;
-	position:relative;
-	margin-right:auto;
-  margin-left:auto;
-	padding-left: 15px;
+  width: 60%;
+  position: relative;
+  margin-top: 190px;
 }
 .rw-words{
 	display: inline;
-	text-indent: 10px;
+	text-indent: 0px;
 }
 .rw-words span{
 	position: absolute;
@@ -162,9 +161,13 @@ p{
   .container{
     width: 1170px;
   }
+}
 
 /*  HEADER  */
-
+header {
+  background: #FFF url('../images/background-hero.png') top left no-repeat;
+  min-height: 700px;
+}
 header nav{
   padding:1em 0;
 }
@@ -202,3 +205,66 @@ header nav ul > li.btn:hover{
    padding:10px 30px;
    background: #ED715E;
  }
+
+
+/* Features */
+.feature-1, .feature-3 {
+  position: relative;
+  display: block;
+  padding: 0 0 5em;
+}
+.feature-2, .feature-4 {
+  position: relative;
+  display: block;
+  padding: 0 0 5em;
+}
+.feature-1:after, .feature-2:after, .feature-3:after, .feature-4:after {
+  content: "";
+  display: table;
+  clear:both;
+}
+.feature-1 .feature-image, .feature-3 .feature-image {
+  float: left;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.feature-1 .feature-heading, .feature-3 .feature-heading {
+  position: absolute;
+  top: -70px;
+  left: 35%;
+  z-index: 0;
+}
+.feature-1 .feature-heading h2, .feature-3 .feature-heading h2 {
+  margin: 0;
+}
+.feature-1 .feature-content, .feature-3 .feature-content {
+  float: left;
+  display: inline-block;
+  width: 50%;
+  margin-right: 50px;
+  padding-top: 100px;
+  padding-left:50px;
+}
+.feature-2 .feature-image, .feature-4 .feature-image {
+  float: right;
+  display: inline-block;
+  position: relative;
+  z-index: 1;
+}
+.feature-2 .feature-heading, .feature-4 .feature-heading {
+  position: absolute;
+  top: -130px;
+  left: 45%;
+  z-index: 0;
+}
+.feature-2 .feature-heading h2, .feature-4 .feature-heading h2 {
+  margin: 0;
+}
+.feature-2 .feature-content, .feature-4 .feature-content {
+  float: left;
+  display: inline-block;
+  width: 40%;
+  padding-top: 80px;
+  padding-right:0px;
+}
