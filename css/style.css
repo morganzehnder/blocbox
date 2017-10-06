@@ -56,9 +56,11 @@ h6{
   color:#444A52;
 }
 p{
-  font-size:24px;
   color:#444A52;
   font-weight:100;
+}
+.feature-content p{
+    font-size:24px;
 }
 .feature-content .one{
     min-width: 550px;
@@ -227,7 +229,6 @@ p{
   }
   .one-third{
     width:29.33333%;
-  }
 }
 @media (min-width: 1200px){
   .container{
@@ -450,22 +451,28 @@ h1 .rw-sentence{
 
 /* FEATURE SUMMARY*/
 .feature-summary .btn{
-  padding-top:50px;
-  padding-bottom:50px;
+  padding-top:70px;
+  padding-bottom:70px;
 }
 .feature-summary ul{
   list-style:none;
+
+}
+.feature-summary a{
+  position:absolute;
+  margin-left:120px;
+  margin-top:155px;
 }
 /* FOOTER */
 .left-footer-block p{
-  text-size:16px;
+  font-size:12px;
 }
 .middle-footer-block ul{
   list-style:none;
-  text-align:left;
 }
 .middle-footer-block ul > li > a{
   text-decoration: none;
+  font-size:12px;
 }
 .middle-footer-block ul > li{
   display: inline;
