@@ -40,7 +40,7 @@ h5{
 }
 h6{
   font-size:48px;
-  color:#282828;
+  color:#ED715E;
 }
 p{
   font-weight:100;
@@ -363,7 +363,7 @@ h1 .rw-sentence{
   display: inline-block;
   width: 40%;
   padding-top: 40px;
-  padding-left:80px;
+  padding-left:40px;
 }
 .feature-4 .feature-content {
   float: left;
@@ -385,9 +385,9 @@ h1 .rw-sentence{
  }
  .box {
    padding:0 15px 15px;
-   background: #F6F6F6;
+   background: #EAEAEA;
    border-radius:1px;
-   border-color:#F6F6F6;
+   border-color:#EAEAEA;
    box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.20);
    min-height: 375px;
    position: relative;
@@ -399,7 +399,7 @@ h1 .rw-sentence{
  }
  .box h5 {
    text-transform: uppercase;
-   background: #FFFFFF;
+   background: #ffffff;
    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.40);
    left:0;
    right:0;
@@ -435,9 +435,9 @@ h1 .rw-sentence{
   margin-left:120px;
   margin-top:155px;
 }
-.feature-summary
 /* FOOTER */
 footer{
+  background-color:#ffffff;
   height:100px;
   position:relative;
   overflow:hidden;
