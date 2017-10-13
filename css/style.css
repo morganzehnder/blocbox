@@ -564,20 +564,25 @@ footer .container{
   }
   .content > .container {
     width:75%;
-    margin-left:2%;
+    margin-left:3.5%;
     margin-right:0;
     margin-top:5%;
   }
   .content-item {
     width:29%;
-    height:27.5%;
     background:#FFFFFF;
-    margin-top:10px
+    margin-top:10px;
     margin-left:10px;
     margin-right:10px;
     display:inline-block;
     box-shadow: 0 2px 4px 0 #AAAAAA;
   }
+
+.item-box{
+  height:214px;
+  overflow:hidden;
+  }
+
 }
 .content-item p, .content-item h5, .content-item ul li{
   padding: 5% 5% 5%;
@@ -589,7 +594,7 @@ footer .container{
   height:885px;
   float:right;
   display:inline-block;
-  margin-top:-960px;
+  margin-top:-900px;
 }
 .collab-box{
   height:100px;
@@ -642,4 +647,22 @@ footer .container{
   width:25px
   height:25px;
   background:#FFB35D;
+}
+
+/* CONTENT */
+.item-box > img{
+  margin-left:0;
+  margin-top:0;
+  height:100%;
+  width:auto;
+}
+.item-box > h5{
+  margin: 20px 5px 5px;
+  line-height:0px;
+}
+.item-box > p{
+  margin: 5px 5px 5px;
+}
+.item-box > ul{
+  line-height:10px;
 }
