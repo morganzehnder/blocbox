@@ -649,7 +649,7 @@ footer .container{
   background:#FFB35D;
 }
 
-/* CONTENT */
+/* ITEM BOX */
 .item-box > img{
   margin-left:0;
   margin-top:0;
@@ -665,4 +665,9 @@ footer .container{
 }
 .item-box > ul{
   line-height:10px;
+}
+
+/* ACTIVE SELECTOR */
+nav li a:active{
+  color:#FB8978;
 }
