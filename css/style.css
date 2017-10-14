@@ -509,6 +509,49 @@ footer .container{
  .dashboard {
    background:#FFFFFF;
  }
+ .left-nav{
+   height:100%;
+   width:280px;
+   color:#282828;
+   background:rgba(218,218,218,0.20);
+   float:left;
+   position:absolute;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+   -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+   -o-transform: translate(-280px,0); /** Opera **/
+   -moz-transform: translate(-280px,0); /** Firefox **/
+}
+.left-nav.open {
+  display:block;
+  width:207px;
+  background: rgba(218,218,218,0.20);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+    z-index: 100;
+}
+.hamburger {
+  position:absolute;
+  z-index: 1000;
+  background:#rgba(218,218,218,0.20);
+  color:#FFFFFF;
+  text-decoration: none;
+  font-size: 22px;
+  padding: 0px 0px;
+  border-radius: 4px;
+  left: 5px;
+  top: 5px;
+}
+ }
  .left-nav {
    height: 100vh;
    width:14.33333%;
@@ -559,6 +602,7 @@ footer .container{
    position: fixed;
    top: 0;
    left:0;
+   z-index:1;
  }
  .horizontal-nav .site-logo {
    padding:10px 20px;
@@ -569,13 +613,13 @@ footer .container{
  }
  .horizontal-nav ul{
    display:inline-block;
-   margin-top:-70px;
+   margin-top:-30px;
    float:right;
    margin-right:25px;
  }
  .horizontal-nav ul li {
    list-style-type: none;
-   display:inline;
+   display:inline-block;
    padding-right:20px;
    line-height:70px;
    vertical-align:top;
@@ -655,6 +699,35 @@ footer .container{
     margin-top:10px;
     margin-left:10px;
     margin-right:10px;
+  }
+}
+@media (min-width:992px) {
+  .left-nav {
+    height: 100vh;
+    width:14.33333%;
+    color:#282828;
+    background:rgba(218,218,218,0.20);
+    float:left;
+    position: fixed;
+    display:block;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+    height: 100vh;
+    width:14.33333%;
+    color:#282828;
+    background: rgba(218,218,218,0.20);
+  }
+  .left-nav.open {
+    width:14.66666667%;
+    transform: translate(0,0);
+    -webkit-transform: translate(0,0); /** Chrome & Safari **/
+    -o-transform: translate(0,0); /** Opera **/
+    -moz-transform: translate(0,0); /** Firefox **/
+  }
+  .hamburger {
+    display:none;
   }
 }
 
