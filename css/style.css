@@ -605,17 +605,29 @@ footer .container{
    z-index:1;
  }
  .horizontal-nav .site-logo {
-   padding:10px 20px;
+   padding:7px 20px;
    margin:0;
    display:inline-block;
    height:40px;
    width:auto;
  }
- .horizontal-nav ul{
+ .horizontal-nav > ul{
    display:inline-block;
-   margin-top:-30px;
+   margin-top:5px;
    float:right;
    margin-right:25px;
+   height: 50px;
+ }
+ .horizontal-nav > ul > ul {
+   margin: 0;
+ }
+ .menu li > ul > li {
+   vertical-align: middle;
+   line-height:40px;
+ }
+ .menu li > ul > li > a > i, .menu li > ul > li > a > img {
+   margin-right: 5px;
+   vertical-align: middle;
  }
  .horizontal-nav ul li {
    list-style-type: none;
@@ -636,35 +648,15 @@ footer .container{
    background: #F0F0F0;
    margin:0;
    padding:0;
+   float: left;
  }
- /* Larger Mobile Devices */
-@media (min-width:460px){
-  .content {
-    float:left;
-    margin-left:160px;
-    position: relative;
-    margin-top:30px;
-  }
-  .content > .container {
-    width:75%;
-    margin-left:5%;
-    margin-right:0;
-    margin-top:5%;
-  }
-  .content-item {
-    width:29%;
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:10px;
-  }
-}
-  /* Tablets */
- @media (min-width:768px){
+ /* Small mobile */
+ @media (min-width:480px) {
    .content {
      float:left;
-     margin-left:160px;
+     margin-left:11.228%;
      position: relative;
-     margin-top:30px;
+     margin-top:2.5%;
    }
    .content > .container {
      width:75%;
@@ -674,19 +666,39 @@ footer .container{
    }
    .content-item {
      width:29%;
-     margin-top:10px;
-     margin-left:10px;
-     margin-right:10px;
+     margin-bottom:1.5%;
+     margin-left:.75%;
+     margin-right:.75%;
    }
  }
-
+ /* Tablets */
+ @media (min-width:768px) {
+   .content {
+     float:left;
+     margin-left:11.228%;
+     position: relative;
+     margin-top:2.5%;
+   }
+   .content > .container {
+     width:75%;
+     margin-left:5%;
+     margin-right:0;
+     margin-top:5%;
+   }
+   .content-item {
+     width:29%;
+     margin-bottom:1.5%;
+     margin-left:.75%;
+     margin-right:.75%;
+   }
+ }
 /* Laptops and Desktops */
 @media (min-width:992px) {
   .content {
     float:left;
-    margin-left:160px;
+    margin-left:11.228%;
     position: relative;
-    margin-top:30px;
+    margin-top:2.5%;
   }
   .content > .container {
     width:75%;
@@ -696,9 +708,9 @@ footer .container{
   }
   .content-item {
     width:29%;
-    margin-top:10px;
-    margin-left:10px;
-    margin-right:10px;
+    margin-bottom:1.5%;
+    margin-left:.75%;
+    margin-right:.75%;
   }
 }
 @media (min-width:992px) {
@@ -714,13 +726,9 @@ footer .container{
     -webkit-transform: translate(0,0); /** Chrome & Safari **/
     -o-transform: translate(0,0); /** Opera **/
     -moz-transform: translate(0,0); /** Firefox **/
-    height: 100vh;
-    width:14.33333%;
-    color:#282828;
-    background: rgba(218,218,218,0.20);
   }
   .left-nav.open {
-    width:14.66666667%;
+    width:14.33333%;
     transform: translate(0,0);
     -webkit-transform: translate(0,0); /** Chrome & Safari **/
     -o-transform: translate(0,0); /** Opera **/
@@ -730,7 +738,6 @@ footer .container{
     display:none;
   }
 }
-
 .content-item{
   background:#FFFFFF;
   display:inline-block;
@@ -750,14 +757,16 @@ footer .container{
   width:19%;
   height:885px;
   float:right;
-  margin-right:20px;
+  margin-right:1.5%;
+  margin-left:1.5%
   display:inline-block;
-  margin-top:-900px;
+  margin-top:-910px;
 }
 .collab-box{
   height:100px;
   width:98%;
   background:#F4F4F4;
+  margin-bottom: 10px;
 }
 .collab-box img, .collab-box a{
   display:inline;
@@ -774,10 +783,15 @@ footer .container{
   height:775px;
   width:98%;
   background:#FAFAFA;
+  padding-top: 5px;
 }
 .comment-box ul li{
   display:inline;
-  margin-right:30px;
+  margin-right:40px;
+}
+.comment-box ul li.active {
+  padding-bottom: 5px;
+  border-bottom: 3px solid #FFB35D;
 }
 .collab-box a i{
   color:#F4F4F4;
@@ -785,12 +799,22 @@ footer .container{
 .comment-box p{
   display:inline;
   color:#FFB35D;
+  font-size:14px;
 }
 .comment-box img, .comment-box p{
   display:inline;
   vertical-align:top;
-  line-height:55px;
-  margin-left:20px;
+  line-height:95px;
+}
+.comment-box img{
+  margin-left:30px;
+  margin-top:20px
+}
+.comment-box p{
+  display:inline;
+  vertical-align:top;
+  margin-left:10px;
+  margin-top:20px;
 }
 /* ICONS */
 .horizontal-nav ul li a i{
@@ -809,15 +833,15 @@ footer .container{
   text-align: center;
   vertical-align:middle;
   position:absolute;
-  top:5%;
+  top:4%;
   left:8.5%
 }
 .w3-circle.large i{
   line-height:100px;
   font-size:64px;
   color:white;
-  margin-top:20px;
-  margin-left:5px;
+  margin-top:22px;
+  margin-left:4px;
 }
 .w3-circle.small{
   border-radius:100%;
@@ -830,7 +854,7 @@ footer .container{
 }
 .w3-circle.small i{
   line-height:50px;
-  margin-top:3px;
+  margin-top:2px;
   font-size:32px;
   color:white;
 }
@@ -857,6 +881,9 @@ footer .container{
 }
 .item-box > ul{
   line-height:10px;
+}
+.item-box p span{
+  color:#0F00FD;
 }
 
 /* ACTIVE SELECTOR */
