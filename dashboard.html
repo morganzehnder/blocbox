@@ -10,10 +10,10 @@
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 
   <!-- CSS -->
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/dropit.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body class="dashboard">
  <!-- RESPONSIVE NAV -->
@@ -21,7 +21,7 @@
 
   <!-- NAV -->
   <nav>
-    <div class="horizontal-nav">
+    <div class="horizontal-nav hn-container">
       <div class="logo-container">
         <a href="#" class="site-logo"><img src="images/dockit-logo.png"></a>
       </div>
@@ -41,7 +41,7 @@
         </ul>
       </ul>
     </div>
-    <div id="left-nav" class="left-nav">
+    <div id="left-nav" class="left-nav nav-container">
       <div class="items">
         <p>ITEMS</p>
         <ul>
@@ -66,8 +66,8 @@
 
 <main role="main">
   <!--CONTENT-->
-  <section class="content">
-    <div class="container">
+  <section class="content-container">
+    <div>
       <div class="content-item">
         <div class="item-box">
           <a href="addcontent.html" class="w3-circle large"><i class="fa fa-plus"></i></a>
@@ -135,8 +135,7 @@
         </div>
       </div>
   </section>
-  <section class="collab">
-    <div class="container">
+  <section class="collab-container">
       <div class="collab-box">
         <img class="profile-img" src="images/profile-img.jpg">
         <a href="addcollab.html" class="w3-circle small"><i class="fa fa-plus"></i></a>
@@ -149,7 +148,7 @@
         <img class="profile-img" src="images/profile-img.jpg">
         <p>Write a comment...</p>
       </div>
-    </div>
+    </section>
 </main>
 <script src="js/jquery-3.2.1.slim.min.js"></script>
 <script src="js/dropit.js"></script>
