@@ -13,7 +13,8 @@
   <link rel="stylesheet" href="css/font-awesome.css">
   <link rel="stylesheet" href="css/dropit.css">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/basic.css">
+  <link rel="stylesheet" href="css/dashboard.css">
 </head>
 <body class="dashboard">
  <!-- RESPONSIVE NAV -->
@@ -27,12 +28,12 @@
       </div>
       <ul class="display-inline">
         <li><a href="#"><i class="fa fa-search"></i></a></li>
-        <li><a href="#"><i class="fa fa-edit"></i></a></li>
-        <li><img class="line" src="images/line.png"></li>
-        <li><a href="account-settings"><img class="profile-img" src="images/profile-img.jpg"></a></li>
-        <ul class="menu">
+        <li class="larger-only"><a href="#"><i class="fa fa-edit"></i></a></li>
+        <li class="larger-only"><img class="line" src="images/line.png"></li>
+        <li class="larger-only"><a href="account-settings"><img class="profile-img" src="images/profile-img.jpg"></a></li>
+        <ul class="menu larger-only">
           <li><a href="#"><i class="fa fa-cog"></i></a>
-            <ul>
+            <ul class="larger-only">
               <li><a href="#"><i class="fa fa-cog"></i>Account Settings</a></li>
               <li><a href="#"><img src="images/browser-app.png" width="25px">Download Browser App</a></li>
               <li><a href="#"><i class="fa fa-sign-out"></i>Sign Out</a></li>
@@ -60,6 +61,12 @@
         <ul>
           <li><a href="#"><i class="fa fa-tags"></i>Tags</a></li>
         </ul>
+        <p>ACTIONS
+          <ul>
+          <li><a href="#"><i class="fa fa-edit mobile-only"></i>Bulk Edit</a></li>
+          <li><a href="#"><i class="fa fa-cog mobile-only"></i>Account Settings</a></li>
+          <li><a href="#"><i class="fa fa-sign-out mobile-only"></i>Sign Out</a></li>
+        </ul>
       </div>
     </div>
   </nav>
@@ -69,7 +76,7 @@
   <section class="content-container">
     <div>
       <div class="content-item">
-        <div class="item-box">
+        <div class="item-box add-button">
           <a href="addcontent.html" class="w3-circle large"><i class="fa fa-plus"></i></a>
         </div>
       </div>
@@ -135,7 +142,7 @@
         </div>
       </div>
   </section>
-  <section class="collab-container">
+  <section class="collab-container larger-only">
       <div class="collab-box">
         <img class="profile-img" src="images/profile-img.jpg">
         <a href="addcollab.html" class="w3-circle small"><i class="fa fa-plus"></i></a>
