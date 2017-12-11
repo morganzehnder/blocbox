@@ -1,0 +1,90 @@
+html, body{
+  overflow-x: hidden;
+  height:100%;
+}
+body{
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color:#444A52;
+  margin: 0;
+}
+h1, h2, h3, h4, h5, h6{
+  font-family: "Lato", Helvetica, Arial, sans-serif;
+}
+h1{
+  font-size:72px;
+  color:#282828;
+  line-height:80px;
+  width:700px;
+}
+h1 span{
+  color:#F2F8FA;
+}
+h2{
+  font-size:140px;
+}
+.feature-heading{
+  color: #F2F8FA;
+}
+h3{
+  font-size:36px;
+  color:#282828;
+  text-align:center;
+}
+h4{
+  font-size:36px;
+  color:#282828;
+}
+h5{
+  font-size:20px;
+  color:#282828;
+}
+h6{
+  font-size:30px;
+  color:#282828;
+}
+p{
+  font-weight:100;
+}
+
+
+/*  HEADER  */
+header {
+  background: url("../images/background-dockit.png") center no-repeat;
+  min-height: 780px;
+}
+header nav{
+  padding:1em 0;
+}
+header nav ul{
+  display: inline;
+  text-align: left;
+  float: left;
+  margin:0;
+}
+header nav ul > li{
+  list-style-type: none;
+  display: inline-block;
+  margin:0 30px;
+}
+header nav ul > li:hover{
+  color:#D96873;
+}
+header nav ul > li > a {
+  color:#282828;
+  text-decoration: none;
+}
+.site-logo img{
+  height:60px;
+}
+h1 .rw-sentence{
+  padding-bottom:80px;
+  letter-spacing: 10px;
+}
+/* BUTTONS */
+ .btn {
+   color: #F2F8FA;
+   font-weight: 700;
+   text-decoration: none;
+   padding: 20px 50px;
+   background: #6BE0B1;
+ }
