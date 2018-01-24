@@ -152,10 +152,16 @@
    padding: 5% 5% 5%;
  }
 
- .item-box > img{
+ .item-box.website > img{
    overflow:hidden;
    height:auto;
    width:105%;
+ }
+
+ .item-box > img{
+   overflow:hidden;
+   height:auto;
+   width:140%;
  }
 
  .item-box > h5{
